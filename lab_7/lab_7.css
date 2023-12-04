@@ -1,0 +1,54 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+.container {
+	padding: 8px;
+}
+
+._items {
+	position: relative;
+	height: 100%;
+	width: 100%;	
+}
+
+input {
+	width: 180px;
+}
+
+.square, .circle, .triangle {
+	position: absolute;
+	opacity: 0.8;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	background: red;
+	border: 1px solid black;
+}
+
+.circle {
+	width: 450px;
+	height: 450px;
+	background: green;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 100px solid blue;
+}

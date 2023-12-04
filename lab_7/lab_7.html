@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head lang="zxx">
+	<meta charset="UTF-8">
+	<title>Lab_7</title>
+	<link rel="stylesheet" href="lab_7.css">
+</head>
+
+<body>
+	<main class="container">
+		<input 
+			min="1" 
+			max="100" 
+			step="1" 
+			id="amount" 
+			type="number" 
+			name="amount"
+			oninput="validateInput(this)"
+		>
+		</input>
+		<div class="nav">
+			<button onclick="showElement('square')">Квадрат</button>
+			<button onclick="showElement('triangle')">Треугольник</button>
+			<button onclick="showElement('circle')">Круг</button>
+		</div>
+
+		<div class="_items"></div>
+	</main>
+
+	<script src="lab_7.js"></script>
+</body>
+
+</html>

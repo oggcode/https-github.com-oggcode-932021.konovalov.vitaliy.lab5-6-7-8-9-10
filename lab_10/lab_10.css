@@ -1,0 +1,151 @@
+body {
+	background-color: black;
+	margin: 0;
+	overflow: hidden;
+	user-select: none;
+}
+
+.lamp-container {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+	height: 30%;
+	margin-top: 5vh;
+}
+
+.lamp-container>img:first-child {
+	height: 100%;
+	cursor: pointer;
+}
+
+.lamp-container>img {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background-size: auto;
+}
+
+#scene {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-size: auto;
+	overflow: hidden;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+#scene:hover {
+	bottom: 5%;
+}
+
+#rope {
+	position: absolute;
+	height: 11vh;
+	margin: 2vh 0 5vh -3vh;
+	transition: margin 0.1s;
+	z-index: -2;
+}
+
+#wizard {
+	position: absolute;
+	height: 100%;
+	background-size: auto;
+	left: 1vh;
+	z-index: -1;
+}
+
+#container {
+	position: absolute;
+	z-index: -1;
+	transform: translateX(-50%);
+	left: 50%;
+
+	opacity: 0;
+	transition: opacity 0.2s;
+
+	border-bottom: 80vh solid yellow;
+	border-left: 45vh solid transparent;
+	border-right: 45vh solid transparent;
+
+	margin-top: 11.3vh;
+	width: 10vh;
+}
+
+.magic-container {
+	position: absolute;
+	right: 20vh;
+	top: 15vh;
+	z-index: -1;
+	height: 20vh;
+}
+
+.magic-container>img {
+	position: absolute;
+	height: 70%;
+	background-size: auto;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+#rabbit,
+#bird {
+	bottom: 10vh;
+	transition: 0s;
+	margin-top: 5vh;
+	left: 0.5vh;
+	height: 45%;
+	z-index: -4;
+}
+
+#rabbit {
+	bottom: 25vh;
+}
+
+#lightOff,
+#lightOn {
+	position: absolute;
+	transform: translate(-50%, 0);
+	bottom: 10vh;
+	left: 50%;
+	width: 80vh;
+	height: 38vh;
+
+	transition: opacity 0.2s;
+	opacity: 0;
+}
+
+#lightOff {
+	z-index: -3;
+}
+
+#lightOn {
+	display: none;
+	z-index: 10;
+}
+
+.hat,
+.animal {
+	position: absolute;
+	z-index: 0;
+	cursor: pointer;
+}
+
+.hat {
+	right: 11vh;
+	bottom: 9vh;
+	width: 18vh;
+	height: 14vh;
+}
+
+.animal {
+	bottom: 28vh;
+	right: 15vh;
+
+	width: 10vh;
+	height: 10vh;
+}

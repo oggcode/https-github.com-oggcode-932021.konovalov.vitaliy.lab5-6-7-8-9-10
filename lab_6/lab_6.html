@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zxx">
+	<meta charset="UTF-8">
+	<title>Lab_6</title>
+	<link rel="stylesheet" href="lab_6.css">
+</head>
+
+<body>
+	<main class="container">
+		<div class="d-flex">
+			<div class="button" onclick="showOneColumn('.left','.right')">
+				Левая колонка
+			</div>
+			<div class="button" onclick="showBothColumn()">
+				Обе две
+			</div>
+			<div class="button" onclick="showOneColumn('.right','.left')">
+				Правая колонка
+			</div>
+		</div>
+
+		<div class="d-flex">
+			<div class="card bg-blue left">
+				<img id="cat" src="cat.jpg" alt="cat">
+			</div>
+
+			<div class="card bg-green right">
+				<img id="dog" src="dog.jpg" alt="dog">
+			</div>
+		</div>
+	</main>
+
+	<script src="lab_6.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Lab_10</title>
+	<link rel="stylesheet" type="text/css" href="lab_10.css" />
+</head>
+
+<body>
+	<main>
+		<img id="scene" src="images/scena.jpg" onclick="magicScene.sceneUp()">
+
+		<div class="lamp-container">
+			<img id="top" src="images/lamp.png" onclick="magicScene.turnUpLight()">
+			<img id="rope" src="images/rope.png">
+		</div>
+
+		<div id="container"></div>
+
+		<div id="lightOff">
+			<img id="wizard" src="images/wizard.jpg">
+
+			<div class="magic-container">
+				<img id="hat" src="images/hat.png">
+				<img id="rabbit" src="images/rabbit.png">
+				<img id="bird" src="images/bird.png">
+			</div>
+		</div>
+
+		<div id="lightOn">
+			<div class="hat" onclick="magicScene.changeAnimal()"></div>
+			<div class="animal" onclick="magicScene.changeAnimal()"></div>
+		</div>
+	</main>
+	<script src="lab_10.js"></script>
+</body>
+
+</html>

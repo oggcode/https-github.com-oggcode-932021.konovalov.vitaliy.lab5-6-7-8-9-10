@@ -1,0 +1,58 @@
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+	width: 400px;
+	height: 380px;
+	border: 4px solid #6dacd5;
+	padding: 10px;
+	text-align: center;
+}
+
+.input {
+	box-sizing: border-box;
+	width: 97%;
+	height: 50px;
+	font-size: 2rem;
+	color: gray;
+	text-align: right;
+}
+
+.output {
+	z-index: 1;
+	position: absolute;
+	color: black;
+	font-size: 2rem;
+	transform: translate(-4px, 7px);
+}
+
+.t-wrapper {
+	position: relative;
+}
+
+table {
+	box-sizing: border-box;
+	width: 100%;
+	border-spacing: 8px;
+}
+
+td {
+	width: 40px;
+	height: 70px;
+	border: solid 1px grey;
+	background: linear-gradient(#f4f4f4, #dfdfdf);
+	text-align: center;
+	cursor: pointer;
+	font-size: 1.7rem;
+}
+
+td:active {
+	border: 1px solid #6dacd5;
+}
+
